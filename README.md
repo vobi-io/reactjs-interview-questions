@@ -322,8 +322,6 @@
 
     React is an **open-source frontend JavaScript library** which is used for building user interfaces especially for single page applications. It is used for handling view layer for web and mobile apps. React was created by Jordan Walke, a software engineer working for Facebook. React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.
   
-  React 是一个开源的前端 JavaScript 框架，可用于构建用户界面特别是单页应用程序。它被用于作为网页和移动应用的视图层。React 由 Facebook 
-  的工程师 Jordan Walke 创建。在 2011 年 React 应用首次被部署到 Facebook 的信息流上，之后于 2012 年被应用到 Instagram 中。
 
 
 2. ### What are the major features of React?
@@ -335,11 +333,6 @@
     * Follows *Unidirectional** data flow or data binding.
     * Uses **reusable/composable** UI components to develop the view.
 
-    React 的主要特性有：
-    * 考虑到真实的 DOM 操作比较昂贵，它使用 VirtualDOM 来替代真实的 DOM
-    * 支持服务端渲染
-    * 遵从单向数据流或数据绑定
-    * 使用可重用/可组合的 UI 组件开发视图
 
 3. ### What is JSX?
 
@@ -358,10 +351,7 @@
       }
     }
     ```
-    JSX 是一个对 ECMAScript 进行类 XML 的语法的扩展。它只是为 `React.createElement()` 函数提供语法糖，从而让在我们在 JavaScript 中，
-    使用类 HTML 模板的语法，进行页面描述。
-
-    在以下示例中，在 `<h1>` 标签中的文本会以 JavaScript 函数的形式返回给渲染函数。
+   
 
     ```jsx harmony
     class App extends React.Component {
@@ -380,9 +370,9 @@
 
     An *Element* is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. *Elements* can contain other *Elements* in their props. Creating a React element is cheap. Once an element is created, it is never mutated.
 
-    一个 Element 是一个普通的对象，以 DOM 节点或其他组件的方式描述你期望在屏幕上呈现的内容。
 
-    React 元素的对象表示如下：
+
+    React:
     The object representation of React Element would be as follows:
 
     ```javascript
@@ -394,7 +384,7 @@
     ```
 
     The above `React.createElement()` function returns an object:
-    上面的 `React.createElement()` 函数会返回一个对象。
+    `React.createElement()`。
 
     ```
     {
@@ -407,7 +397,7 @@
     ```
 
     And finally it renders to the DOM using `ReactDOM.render()`:
-    最终使用 `ReactDOM.render()` 方法渲染到 DOM：
+    `ReactDOM.render()`  DOM：
 
     ```html
     <div id='login-btn'>Login</div>
@@ -415,8 +405,7 @@
 
     Whereas a **component** can be declared in several different ways. It can be a class with a `render()` method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns an JSX tree as the output:
 
-    然而一个组件可以以多种不同方式进行声明。它可以是一个含有 `render()` 方法的类。在简单的场景中，它能被定义成函数。在其它场景，它接收 props
-    作为输入，返回 JSX 树作为输出：
+   
 
     ```javascript
     const Button = ({ onLogin }) =>
@@ -425,7 +414,7 @@
 
     Then JSX gets transpiled to `React.createElement()` function tree:
 
-    接着 JSX 被转译为 `React.createElement()` 函数树：
+     JSX  `React.createElement()`：
 
     ```javascript
     const Button = ({ onLogin }) => React.createElement(
@@ -438,11 +427,11 @@
 5. ### How to create components in React?
 
     There are two possible ways to create a component.
-    这里有两种可行方式来创建一个组件：
+  
 
     1. **Function Components:** This is the simplest way to create a component. Those are pure JavaScript functions that accept props object as first parameter and return React elements:
 
-    1. **Function Components:** 这是创建组件最简单的方式
+    1. **Function Components:** 
 
         ```jsx harmony
         function Greeting({ message }) {
